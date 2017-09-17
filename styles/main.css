@@ -1,0 +1,88 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+/*
+    Categories
+*/
+.categoriesContainer {
+    display: flex;
+}
+
+.categoriesText {
+    margin-right: 5px;
+}
+
+.categoryList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.categoryList li {
+    display: inline-block;
+}
+
+.categoryLink {
+    display: inline-block;
+    text-decoration: none;
+    color: darkgrey;
+    margin: 0 8px;
+}
+
+.categoriesContainer li:first-child a {
+    margin-left: 0;
+}
+
+.is__active a {
+    color: #444;
+    border-bottom: 1px solid #444;
+}
+
+/*
+   Facts
+*/
+/* The fact (saying) */
+.fact {
+    font-family: 'Graduate', cursive;
+    font-size: 30px;
+    text-align: justify;
+}
+
+/* Button for next fact */
+.btn--next-fact {
+    font-family: 'Graduate', cursive;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn--next-fact:hover {
+    transform: rotate(-2deg);
+}
+
+.fa-chevron-right {
+    font-size: 12px;
+}
+
+/*
+    Contains the current API URL
+    Needs to be hidden
+ */
+.currentAPIurl {
+    position: absolute;
+    left: -999em;
+    top: -999em;
+}

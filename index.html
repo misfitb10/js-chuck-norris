@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Chuck Norris API facts</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <header class="categoriesContainer">
+                <div class="categoriesText">categories: </div>
+                <ul class="categoryList">
+                    <li class="is__active">
+                        <a href="#" class="categoryLink c--random" data-category="random">random</a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryLink c--food" data-category="food">food</a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryLink c--celebrity" data-category="celebrity">celebrity</a>
+                    </li>
+                    <li>
+                        <a href="#" class="categoryLink c--sport" data-category="sport">sport</a>
+                    </li>
+                </ul>
+            </header>
+
+            <article>
+                <!-- A random Chuck Norris fact here -->
+                <p class="fact"></p>
+            </article>
+
+            <a href="#" class="btn--next-fact">next <span class="categoryItem">random</span> fact <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </main>
+    </div>
+
+    <div class="currentAPIurl">https://api.chucknorris.io/jokes/random</div>
+
+    <audio id="punch" src="sounds/punch.mp3"></audio>
+    <audio id="punch2" src="sounds/punch2.mp3"></audio>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
